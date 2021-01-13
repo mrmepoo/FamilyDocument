@@ -1,0 +1,8 @@
+Bước 1. Cài các lib phụ thuộc
+yum install -y xorg-x11-fonts-75dpi
+yum install -y xorg-x11-fonts-Type1
+Bước 2. Cài wkhtmltopdf
+download file rpm về, thực hiện lệnh
+rpm -Uvh wkhtmltox-0.12.2.1_linux-centos6-amd64.rpm
+Bước 3. Cài openssl nếu chạy wkhtmltopdf bị lỗi ssl
+yum install -y openssl-devel

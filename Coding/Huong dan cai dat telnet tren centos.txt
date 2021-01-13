@@ -1,0 +1,5 @@
+Bước 1. yum install telnet telnet-server -y
+		
+Bước 2. 
+systemctl start telnet.socket
+systemctl enable telnet.socket

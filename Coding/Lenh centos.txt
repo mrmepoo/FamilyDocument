@@ -1,0 +1,12 @@
+1. Mở port tomcat :
+# firewall-cmd --zone=public --add-port=8080/tcp --permanent
+# firewall-cmd --reload
+# firewall-cmd --zone=home --list-all
+# systemctl enable firewalld
+# systemctl start firewalld
+# systemctl status firewalld
+# systemctl stop firewalld
+systemctl disable firewalld
+
+
+1. Netstat

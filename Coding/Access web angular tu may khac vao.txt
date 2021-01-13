@@ -1,0 +1,2 @@
+1. package.json : ng serve --host ip --port port --proxy-config proxy.conf.json
+2. proxy.config.json : target : http://ip:8080

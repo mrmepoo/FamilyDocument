@@ -1,0 +1,7 @@
+1. Lỗi ORA-01034: ORACLE not available ORA-27101: shared memory realm does not exist
+ su - oracle
+ sqlplus /nolog
+ conn sys as sysdba
+ startup
+ 
+hoặc login vào user oracle : su - oracle và lsnrctl start

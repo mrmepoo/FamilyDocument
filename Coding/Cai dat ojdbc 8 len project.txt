@@ -1,0 +1,10 @@
+1. download ojdbc8
+2. mvn install:install-file -Dfile=D:/ojdbc/ojdbc8.jar -DgroupId=com.oracle -DartifactId=ojdbc8 -Dversion=19.3 -Dpackaging=jar
+3. add pom :
+	<dependency>
+			<groupId>com.oracle</groupId>
+			<artifactId>ojdbc8</artifactId>
+			<version>19.3</version>
+	</dependency>
+	
+thu muc maven :  C:\Users\Admin 88\.m2\repository

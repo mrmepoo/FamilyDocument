@@ -1,0 +1,2 @@
+1. Tạo 1 nhánh mới
+git checkout -b --tên nhánh--

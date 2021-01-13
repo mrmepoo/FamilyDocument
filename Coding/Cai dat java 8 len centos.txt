@@ -1,0 +1,2 @@
+-download file rpm 
+- chạy lệnh : rpm -Uvh jdk-8u172-linux-x64.rpm

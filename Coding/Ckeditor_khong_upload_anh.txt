@@ -1,0 +1,14 @@
+1. Cấu hình web.xml
+    <filter>
+        <filter-name>httpHeaderSecurity</filter-name>
+        <filter-class>org.apache.catalina.filters.HttpHeaderSecurityFilter</filter-class>
+    <init-param>
+      <param-name>antiClickJackingOption</param-name>
+      <param-value>SAMEORIGIN</param-value>
+    </init-param>
+        <async-supported>true</async-supported>
+    </filter>
+2. Kiểm tra thư mục temp của tomcat, nếu không có sẽ không up được ảnh dung lượng lớn
+3. Set header cho response :
+@Context
+private HttpServletResponse response;

@@ -1,0 +1,2 @@
+exp 'tracebility2/matkhau1#@VSATTP as sysdba' file=D:\tracebility2.dmp owner=tracebility2 log=D:\tracebility2.log
+imp vsattp_hg_copy/tungdemo@orcl FROMUSER=vsattp_hg TOUSER=vsattp_hg_copy FILE=D:/vsattp_hg.dmp

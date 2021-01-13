@@ -1,0 +1,7 @@
+1. Cách đẩy code lên git
+- tạo 1 repository mới
+- git clone 1 thư mục trên máy tính
+- git push code lên
+
+2. Cách đổi lại mật khẩu để pull
+- go to \Control Panel\User Accounts\Credential Manager click on windows credentials and edit the corresponding credentials
