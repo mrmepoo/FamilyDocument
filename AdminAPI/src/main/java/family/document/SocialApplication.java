@@ -18,7 +18,7 @@ import java.util.Map;
 
 @SpringBootApplication
 @RestController
-public class MainApplication extends WebSecurityConfigurerAdapter {
+public class SocialApplication extends WebSecurityConfigurerAdapter {
 
     @GetMapping("/user")
     public Map<String, Object> user(@AuthenticationPrincipal OAuth2User principal) {
@@ -55,7 +55,7 @@ public class MainApplication extends WebSecurityConfigurerAdapter {
 
 
     public static void main(String[] args) {
-        SpringApplication.run(MainApplication.class, args);
+        SpringApplication.run(SocialApplication.class, args);
     }
 
 }
