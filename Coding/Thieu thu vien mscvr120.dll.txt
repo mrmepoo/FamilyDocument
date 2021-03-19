@@ -1,0 +1,4 @@
+If you’re going to run your games on a Windows 32-bit computer, then you need to copy the MSVCR120.dll file to C:\Windows\system32 (some may be C:\WINDOWS\system32).
+
+But if it’s a Windows 64-bit PC, you need to be more careful. There should be two MSVCR120.dll files: the 32-bit one should be copied to C:\Windows\SysWOW64, and the 64-bit one should be in C:\Windows\System32. 
+Make sure the 32-bit file is in the 64-bit folder while the 64-bit file in the 32-bit one.
