@@ -6,9 +6,47 @@
 <body>
 
 <div id="app">
-    {{ message }}
+    <!--    Index-->
+    <!--    {{ message }}-->
+    <!--    <ol>-->
+    <!--        <my-menu-->
+    <!--                v-for="item in menuList"-->
+    <!--                v-bind:menu="item"-->
+    <!--                v-bind:key="item.id"-->
+    <!--        ></my-menu>-->
+    <!--    </ol>-->
+    <!--    <ol>-->
+    <!--        <todo-item-->
+    <!--                v-for="item in groceryList"-->
+    <!--                v-bind:todo="item"-->
+    <!--                v-bind:key="item.id"-->
+    <!--        ></todo-item>-->
+    <!--    </ol>-->
+
+    <!--    <p>{{objFreeze.name}}</p>-->
+    <!--    <button v-on:click="objFreeze.name='123'">Click change</button>-->
+
+    <!--    <p>The game name is <span v-html="rawHtml"></span></p>-->
+    <!-- ------------------------------------------------------------------------------------------------------------ -->
+    <!--    Component Basic.ts-->
+    <div id="button-counter">
+        <button-counter></button-counter>
+        <button-counter></button-counter>
+        <button-counter></button-counter>
+    </div>
+
+    <!--    <blog-spot title="123"></blog-spot>-->
+    <!--    <blog-spot title="234"></blog-spot>-->
+    <!--    <blog-spot title="567"></blog-spot>-->
+    <div id="blog-posts-events-demo">
+        <div :style="{ fontSize: postFontSize + 'em' }">
+            <blog-spot v-for="post of posts" v-bind:post="post" v-bind:key="post.id"
+                       v-on:enlarge-text="postFontSize += 0.1"></blog-spot>
+        </div>
+    </div>
+
 </div>
 
-<script src="index.js"></script>
+<script src="componentBasic.js"></script>
 </body>
 </html>
