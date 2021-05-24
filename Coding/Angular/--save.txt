@@ -1,0 +1,1 @@
+Trước phiên bản NPM 5, nếu không sử dụng --save, khi install 1 module, ta phải thêm tay dependencies vào dependencies section của package.json. --save sẽ giúp NPM tự thực hiện điều này mà không phải thêm.

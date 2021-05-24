@@ -1,0 +1,1 @@
+two-way binding = property binding + event binding ({{data}} = [property]="data", (event)="expession")
