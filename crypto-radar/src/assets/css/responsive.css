@@ -1,0 +1,136 @@
+@media (max-width: 1199px) {
+}
+
+@media (max-width: 992px) {
+	
+	.navbar .navbar-collapse{
+		position: fixed;
+		left: -100%;
+		top: 0px;
+		right:100%;
+		bottom: 0;
+		width:100%;
+		z-index: 99;
+		align-items:flex-start;
+		transition: all 300ms ease-in-out;
+		-webkit-transition: all 300ms ease-in-out;
+		-moz-transition: all 300ms ease-in-out;
+		-o-transition: all 300ms ease-in-out;
+		background:rgba(0,0,0,0.7) url(../img/bg-nav.png) repeat-y 0 0;
+		height:100%;
+		}
+	.navbar .navbar-collapse.show{
+		right:0;
+		left: 0;}
+	.navbar .navbar-collapse .navbar-nav, #navbars-action{
+		width: 240px;
+		margin-bottom:30px;
+		}
+	#navbars-action{
+		text-align:center;}
+	.navbar.navbar-expand-lg #navbar{
+		align-items:flex-start}
+	.navbar-expand-lg .navbar-nav .nav-item {
+		margin:0;
+		}
+	.navbar-expand-lg .navbar-nav .nav-link{
+		text-align:left !important;
+		padding:10px;
+		color:#444;
+		
+		border-bottom:1px solid #ddd;
+		}
+	.navbar-expand-lg .navbar-nav a{
+		text-transform:none !important; }
+	.navbar-expand-lg .dropdown-toggle::after{
+		float:right;
+		margin-top:7px;
+		}
+	.navbar-nav > li .dropdown-menu{
+		width:100%;
+		border:none;
+		}
+	#hdFix{
+		height:50px;
+		}
+	
+	.navbar-brand{
+		width:40px;
+		margin-left:30px
+		
+		}
+	.navbar-toggler{
+		position:fixed;
+		left:0em;
+		margin:0;
+		width:40px;
+		height:40px;
+		z-index:999;
+		border:none;
+		outline:none;
+		transition: all 300ms ease-in-out;
+		-webkit-transition: all 300ms ease-in-out;
+		-moz-transition: all 300ms ease-in-out;
+		-o-transition: all 300ms ease-in-out;
+		
+		}
+	
+	.navbar-toggler.open{
+		left:240px;
+		
+		
+		}
+	.navbar-toggler.open .fal{
+		color:#f20d0d;
+		border:none;
+		outline:none
+		}
+	.navbar-toggler:focus{
+		outline:none;
+		border:none;}
+	.navbar-toggler.open .fal:before {
+		content: "\f00d";
+	}
+	#about .pic::before, #about .pic::after{
+		display:none;
+		}
+	#partner .col-md-6.py-5{
+		padding-top:1em !important;
+		padding-bottom:1em !important;
+		}
+	#partner .col-md-6.py-5.border-primary.border-end{
+		border:none !important;
+		}
+	#partner .st-tl.mb-4{
+		margin-bottom:1em !important}
+	#loginPopup .p-5{padding:.75em !important}
+	#navbars-action{
+		margin-left:0 !important}
+	#searchform{
+		width:auto;
+		right:0;
+		left:0;}
+}
+
+@media (max-width: 768px) {
+	.container, .container-md, .container-sm {
+		max-width: 100%;
+		}
+
+	#prods .h5{
+	font-size:1em;}
+	
+	
+	
+	
+	
+	
+	
+}
+@media (max-width: 450px) {
+	
+	
+
+	
+	
+}
