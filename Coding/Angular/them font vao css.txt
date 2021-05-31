@@ -1,0 +1,12 @@
+- Khi có một file css, thường sẽ chỉ khai báo : 
+body {
+  color: #333;
+  font: .85rem/1.6rem 'Open Sans', sans-serif;
+  background: #fff;
+}
+
+=> để giao diện hiển thị đúng font này cần thêm @font-face
+@font-face {
+  font-family: Open Sans;
+  src: url('../fonts/OpenSans-Bold.ttf') format("truetype");
+}

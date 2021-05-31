@@ -1,15 +1,15 @@
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
-import {MainComponent} from './main/main.component';
+import {PagesComponent} from './pages.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: MainComponent,
+    component: PagesComponent,
     children: [
       {
-        path: 'pages',
-        loadChildren: () => import('../pages/pages.module').then(m => m.PagesModule)
+        path: 'token-sale',
+        loadChildren: () => import('./token-sale/token-sale.module').then(m => m.TokenSaleModule)
       }
     ]
   }
@@ -19,5 +19,5 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class LayoutRoutingModule {
+export class PagesRoutingModule {
 }

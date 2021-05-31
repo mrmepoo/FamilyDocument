@@ -7,7 +7,7 @@ import javax.persistence.*;
 import java.util.Date;
 
 @Entity
-public class CryptoSaleType {
+public class Token {
 
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
@@ -18,10 +18,6 @@ public class CryptoSaleType {
     @Getter
     @Setter
     private String name;
-
-    @Getter
-    @Setter
-    private String code;
 
     @Getter
     @Setter

@@ -28,7 +28,10 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/assets/css/bootstrap.min.css",
+              "src/assets/css/custom-styles.css",
+              "src/assets/css/bootstrap-grid.min.css"
             ],
             "scripts": []
           },
@@ -91,7 +94,10 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/assets/css/bootstrap.min.css",
+              "src/assets/css/custom-styles.css",
+              "src/assets/css/bootstrap-grid.min.css"
             ],
             "scripts": []
           }
