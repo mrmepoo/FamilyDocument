@@ -1,0 +1,89 @@
+<div id="wrapper" class="">
+  <div id="sidebar">
+    <button type="button" id="barToggle"><i class="far fa-stream"></i></button>
+    <div id="menu-space">
+      <div id="cl-vnavigation">
+        <div id="inner-scrollbar" data-scrollbar="" tabindex="1" style="overflow: hidden; outline: none; padding-bottom:0;" class="">
+          <article class="scroll-content" style="transform: translate3d(0px, 000px, 0px); ">
+            <canvas class="overscroll-glow" style="display: none; pointer-events: none;"></canvas>
+            <ul id="sidenav" class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link active" href="#" role="button" id="sidenav-1">
+                  <i class="fas fa-sliders-h"></i><span class="text">Cấu hình đối tác</span>
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle " href="#" role="button" id="sidenav-2" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fas fa-file-import"></i><span class="text">Tiếp nhận và sử lý khiếu nại</span>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="sidenav-2">
+                  <li><a class="dropdown-item" href="#">Tiếp nhận khiếu nại</a></li>
+                  <li><a class="dropdown-item" href="#">Xử lý khiếu nại</a></li>
+                  <li><a class="dropdown-item" href="#">Kết quả khiếu nại</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle " href="#" role="button" id="sidenav-3" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fas fa-boxes"></i><span class="text">Quản lý sản phẩm</span>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="sidenav-3">
+                  <li><a class="dropdown-item" href="#">Danh mục sản phẩm</a></li>
+                  <li><a class="dropdown-item" href="#">Quản lý quy trình sản phẩm</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle " href="#" role="button" id="sidenav-4" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fas fa-file-code"></i><span class="text">Quản lý kho code</span>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="sidenav-4">
+                  <li><a class="dropdown-item" href="#">Quản lý kho code 1</a></li>
+                  <li><a class="dropdown-item" href="#">Quản lý kho code 2</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle " href="#" role="button" id="sidenav-5" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fas fa-cogs"></i><span class="text">Cấu hình quy trình sản xuất</span>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="sidenav-5">
+                  <li><a class="dropdown-item" href="#">Cấu hình quy trình 1</a></li>
+                  <li><a class="dropdown-item" href="#">Cấu hình quy trình 1</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle " href="#" role="button" id="sidenav-6" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fas fa-file-alt"></i><span class="text">Quản lý tin tức</span>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="sidenav-6">
+                  <li><a class="dropdown-item" href="#">Quản lý tin tức 1</a></li>
+                  <li><a class="dropdown-item" href="#">Quản lý tin tức 3</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" role="button" id="sidenav-7" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fas fa-ad"></i><span class="text">Quản lý banner</span>
+                </a>
+              </li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="pcont">
+    <app-header></app-header>
+    <div id="pcontTop" class="pt-3 pb-2">
+      <div class="container-fluid">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb mb-2">
+            <li class="breadcrumb-item"><a href="">Quản lý sản phẩm</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Quản lý sản phẩm</li>
+          </ol>
+        </nav>
+        <div class="h4 text-primary fw-bold">Quản lý sản phẩm</div>
+      </div>
+    </div>
+    <router-outlet></router-outlet>
+    <app-footer></app-footer>
+  </div>
+</div>
