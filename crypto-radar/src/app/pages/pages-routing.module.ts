@@ -10,6 +10,10 @@ const routes: Routes = [
       {
         path: 'token-sale',
         loadChildren: () => import('./token-sale/token-sale.module').then(m => m.TokenSaleModule)
+      },
+      {
+        path: 'joined-token-sale-detail',
+        loadChildren: () => import('./joined-token-sale-detail/joined-token-sale-detail.module').then(m => m.JoinedTokenSaleDetailModule)
       }
     ]
   }

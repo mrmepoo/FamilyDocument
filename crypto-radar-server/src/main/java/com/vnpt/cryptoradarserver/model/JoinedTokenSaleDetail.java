@@ -7,7 +7,7 @@ import javax.persistence.*;
 import java.util.Date;
 
 @Entity
-public class TokenSale {
+public class JoinedTokenSaleDetail {
 
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
@@ -17,27 +17,35 @@ public class TokenSale {
 
     @Getter
     @Setter
-    private Long tokenId;
+    private String tokenSaleId;
 
     @Getter
     @Setter
-    private Long tokenSaleTypeId;
+    private String telegramUserId;
 
     @Getter
     @Setter
-    private Date startTime;
+    private String email;
 
     @Getter
     @Setter
-    private Date endTime;
+    private String twitterUserId;
 
     @Getter
     @Setter
-    private String saleLink;
+    private String bscAddress;
 
     @Getter
     @Setter
-    private String referLink;
+    private String instagramUserId;
+
+    @Getter
+    @Setter
+    private String tiktokUserId;
+
+    @Getter
+    @Setter
+    private String redditUserId;
 
     @Getter
     @Setter
