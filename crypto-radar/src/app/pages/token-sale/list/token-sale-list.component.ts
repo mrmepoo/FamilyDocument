@@ -1,5 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {TokenSaleTypeService} from '../../token-sale-type/token-sale-type.service';
+import {BsModalService} from 'ngx-bootstrap/modal';
+import {TokenSaleEditComponent} from '../edit/token-sale-edit.component';
 
 @Component({
   selector: 'app-list',
@@ -10,7 +12,9 @@ export class TokenSaleListComponent implements OnInit {
 
   tokenTypeList = [];
 
-  constructor(private tokenSaleTypeService: TokenSaleTypeService) {
+  constructor(
+    private modalService: BsModalService,
+    private tokenSaleTypeService: TokenSaleTypeService) {
   }
 
   ngOnInit(): void {
@@ -22,5 +26,9 @@ export class TokenSaleListComponent implements OnInit {
     this.tokenSaleTypeService.getAll(rq).subscribe(res => {
       console.log(res);
     });
+  }
+
+  openAddDialog() {
+    this.modalService.show(TokenSaleEditComponent, {});
   }
 }
